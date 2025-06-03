@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.pinecityzooo.app"
+        version   = "1.0.0">
+
+    <name>Pine City Zooo</name>
+    <description>
+        A mobile app for Pine City Zooo built with PhoneGap for Android.
+    This app allows visitors to explore zoo attractions, view animal profiles,
+    check feeding times, navigate using an interactive map, and stay updated on upcoming events and promotions.
+    Designed for a fun and educational experience for all ages.
+    </description>
+    <author email="zalmokeona@gmail.com" href="http://www.pinecityzooo.com">
+        Pine City Zooo Team
+    </author>
+
+    <!-- Main entry point -->
+    <content src="index.html" />
+
+    <!-- Android-specific preferences -->
+    <preference name="fullscreen" value="true" />
+    <preference name="orientation" value="portrait" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="phonegap-version" value="cli-9.0.0" />
+
+    <!-- Android platform only -->
+    <platform name="android">
+        <img src="images/map.png" alt="Zoo Map">
+        <preference name="android-minSdkVersion" value="19" />
+        <preference name="android-targetSdkVersion" value="30" />
+    </platform>
+
+    <!-- Allow everything -->
+    <access origin="*" />
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+
+</widget>
